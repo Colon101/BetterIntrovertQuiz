@@ -76,6 +76,6 @@
 		/>
 	{/if}
 	{#if questionIndex > 9}
-		<h1 class="text-4xl text-center font-semibold">Your result: {result}/100</h1>
+		<h1 class="text-center text-4xl font-semibold">Your result: {result}/100</h1>
 	{/if}
 </div>
