@@ -23,4 +23,13 @@
 
 {#if $gameIndex >= questions.length}
 	<h1 class="text-center text-4xl font-semibold">Your result: {$result}/100</h1>
+	<div class=" flex h-[50vh] items-center justify-center">
+		<button
+			class="rounded-lg bg-sky-700 px-5 py-2.5 text-center text-sm font-medium text-white transition-all hover:-translate-y-2 hover:bg-sky-800 focus:outline-none focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-sky-800"
+			on:click={() => {
+				gameIndex.set(0);
+				result.set(0);
+			}}>Restart</button
+		>
+	</div>
 {/if}
