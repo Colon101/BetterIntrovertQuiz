@@ -3,7 +3,7 @@
 	import { result, gameIndex } from '$lib/gamestores';
 </script>
 
-<div class=" h-screen">
+<div class="h-screen">
 	<div class="flex justify-center">
 		<div class=" fixed top-5 text-center">
 			<h1 class=" text-3xl font-semibold">{question}</h1>
