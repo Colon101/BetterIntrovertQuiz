@@ -15,14 +15,12 @@
 	];
 </script>
 
-<div class="pb-3">
-	{#each questions as question, i}
-		{#if $gameIndex === i}
-			<Question {question} />
-		{/if}
-	{/each}
-
-	{#if $gameIndex >= questions.length}
-		<h1 class="text-center text-4xl font-semibold">Your result: {$result}/100</h1>
+{#each questions as question, i}
+	{#if $gameIndex === i}
+		<Question {question} />
 	{/if}
-</div>
+{/each}
+
+{#if $gameIndex >= questions.length}
+	<h1 class="text-center text-4xl font-semibold">Your result: {$result}/100</h1>
+{/if}
