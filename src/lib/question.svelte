@@ -1,7 +1,6 @@
 <script lang="ts">
 	export let question: string;
-	export let result: number;
-	export let questionNum: number;
+	import { result, gameIndex } from '$lib/gamestores';
 </script>
 
 <div class="flex justify-center pb-12 pt-6">
@@ -12,8 +11,8 @@
 		<button
 			class=" flex h-[5vh] max-h-14 w-5/6 max-w-[1000px] cursor-pointer items-center rounded-md bg-gray-500 transition-all hover:scale-[1.03] hover:bg-slate-700"
 			on:click={() => {
-				questionNum += 1;
-				result += i;
+				gameIndex.update((x) => x + 1);
+				result.update((x) => x + i);
 			}}
 		>
 			<span class="ml-4">
